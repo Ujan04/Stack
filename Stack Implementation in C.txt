@@ -35,7 +35,7 @@ int pop(struct Stack* stack) {
         return stack->items[stack->top--];
     } else {
         printf("Stack underflow! Cannot pop.\n");
-        return -1; // Return a sentinel value for empty stack
+        return -1;
     }
 }
 
@@ -45,7 +45,7 @@ int peek(struct Stack* stack) {
         return stack->items[stack->top];
     } else {
         printf("Stack is empty! Cannot peek.\n");
-        return -1; // Return a sentinel value for empty stack
+        return -1;
     }
 }
 
